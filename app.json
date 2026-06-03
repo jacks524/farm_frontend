@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ACIA",
+    "slug": "ACIA",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fureh.acia"
+    },
+    "android": {
+      "package": "com.fureh.acia",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "checkAutomatically": "NEVER"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8572d46e-a2d1-4f1c-ad7d-88a76697c94f"
+      }
+    }
+  }
+}
