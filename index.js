@@ -1,5 +1,15 @@
 import { registerRootComponent } from 'expo';
 
+// Polyfill DOMException for Hermes versions that don't expose it as a global
+if (typeof global.DOMException === 'undefined') {
+  global.DOMException = class DOMException extends Error {
+    constructor(message = '', name = 'Error') {
+      super(message);
+      this.name = name;
+    }
+  };
+}
+
 import App from './App';
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
